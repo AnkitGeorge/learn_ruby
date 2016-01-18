@@ -7,16 +7,18 @@ def shout(y)
 end
 
 def repeat(input_string, num = 2)
+  input_string.to_s
+  [input_string] * num * " "
   # The important part is num = 2. What happens is if a num isn't given,
   # then num will fallback on 2, i.e. it has a default value of 2.
-  counter = 0
-  output_string = []
-
-  while counter < num
-    output_string << input_string
-    counter += 1
-  end
-  output_string.join(" ") #combines string, separated with spaces.
+  # counter = 0
+  # output_string = []
+  #
+  # while counter < num
+  #   output_string << input_string
+  #   counter += 1
+  # end
+  # output_string.join(" ") #combines string, separated with spaces.
 end
 
 def start_of_word(word, num)
